@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f8f8;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+        }
+        .skip-link:focus {
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            z-index: 1000;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            border: 5px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="page2.html">Cats Gallery</a>
+        <a href="page3.html">Cat Facts</a>
+    </nav>
+    <main id="main">
+        <h1>Welcome to the Cat World!</h1>
+        <p>Cats are cute little menace furballs. I'll be giving you some pictures and a bit of facts aobut them. Heres some samples.</p>
+        <div class="grid">
+            <img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg" alt="Cat">
+            <img src="https://preview.redd.it/wjmhopidkv871.jpg?width=640&crop=smart&auto=webp&s=fd32af2a855fd3efabcc2437e70ec0f01ee11ad8" alt="Kitty">
+        </div>
+    </main>
+</body>
+</html>
